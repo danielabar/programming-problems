@@ -1,0 +1,12 @@
+{
+  "libs": [
+    "ecma5"
+  ],
+  "loadEagerly": [
+    "lib/**/*.js",
+    "node_modules/chai/lib/**/*.js"
+  ],
+  "plugins": {
+    "node": {}
+  }
+}
