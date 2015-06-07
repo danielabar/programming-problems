@@ -16,9 +16,20 @@ describe('fib', function() {
     1548008755920, 2504730781961, 4052739537881, 6557470319842, 10610209857723, 17167680177565, 27777890035288, 44945570212853, 72723460248141, 117669030460994
   ];
 
+  it ('Computes the first fibonacci number', function() {
+    expect(fib.compute(1)).to.eql([0]);
+  });
 
-  it('Computes the first 100 Fibonacci numbers', function() {
-    expect(fib.compute()).to.eql(expectedResult);
+  it ('Computes the first 2 fibonacci number', function() {
+    expect(fib.compute(2)).to.eql([0, 1]);
+  });
+
+  it ('Computes the first 3 fibonacci number', function() {
+    expect(fib.compute(3)).to.eql([0, 1, 1]);
+  });
+
+  it('Computes the first 70 fibonacci numbers', function() {
+    expect(fib.compute(70)).to.eql(expectedResult);
   });
 
 });
